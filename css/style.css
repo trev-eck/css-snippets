@@ -1,0 +1,66 @@
+:root {
+    --burple: rgb(232 103 237);
+    --greyz: rgb(51 57 64);
+}
+
+header {
+    text-align: center;
+    background-color: var(--greyz);
+    color: var(--burple);
+    padding: 2% 0 2% 0;
+}
+.flexbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--greyz);
+    justify-content: space-evenly;
+}
+.code-snippet {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    color: var(--burple);
+    border: dashed 1px white;
+    margin: 1%;
+}
+.code-snippet:hover {
+    box-shadow: inset 0px 0px 8px;
+}
+.code-snippet h2:hover {
+    box-shadow: inset 0px 0px 8px;
+}
+.code-snippet h2 {
+    border: solid 1px white;
+    position: relative;
+    margin-top: -20px;
+    background-color: var(--greyz);
+    width: 95%;
+    align-self: center;
+}
+.snippet-description {
+    margin: 2%;
+}
+.code-example {
+    background-image: linear-gradient(rgba(232, 103, 237, 25%), rgba(232, 103, 237, 75%));
+    padding: 1%;
+    color: white;
+}
+footer{
+    text-align: center;
+    background-color: var(--greyz);
+    color: var(--burple);
+    padding: 2% 0 2% 0;
+}
+
+@media screen and (max-width: 992px) {
+    .code-snippet{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .code-snippet{
+        width: 98%;
+    }
+}
